@@ -171,7 +171,7 @@ class Game
 
   def winner_check
     if @winner == true
-  
+      puts 'Computer Wins!'
       puts 'Previous guesses: '
       @guess_switch = 1
       @guesses.each do |array|
