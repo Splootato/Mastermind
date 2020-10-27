@@ -91,7 +91,7 @@ class Game
     @guess = index_as_colour.join(' ')
     @guesses.push(@guess)
     circles = @colors_as_circles.join(' ')
-    puts circles
+    puts "Your guess: #{circles}"
   end
   
   # Checks whether guess matches code.
@@ -302,7 +302,7 @@ class Game
   def show_pegs
     white_pegs_as_circle
     red_pegs_as_circle
-    puts @white_pegs_as_circle
-    puts @red_peg_as_circle 
+    puts "White pegs: #{@white_pegs_as_circle}"
+    puts "Red pegs:   #{@red_peg_as_circle}"
   end 
 end
