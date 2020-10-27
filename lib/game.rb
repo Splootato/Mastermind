@@ -26,8 +26,8 @@ class Game
   def game_start_cb
     puts "Try to break the computer's code in less than 8 moves!"
     i = 0
-    while @winner == false && i < 8
-      puts "You have #{8 - i} guesses remaining..."
+    while @winner == false && i < 12
+      puts "You have #{12 - i} guesses remaining..."
       player_guess
       red_peg_check
       white_peg_check
@@ -35,7 +35,7 @@ class Game
       check_winner
       i += 1
     end
-  if i == 8
+  if 12 == 8
     game_over
   end
   end
