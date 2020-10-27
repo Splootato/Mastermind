@@ -35,7 +35,7 @@ class Game
       check_winner
       i += 1
     end
-  if 12 == 8
+  if i == 12
     game_over
   end
   end
